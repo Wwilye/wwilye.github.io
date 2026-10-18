@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космическая Викторина 🚀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- ЭКРАН СТАРТА -->
+        <div id="startScreen" class="screen active">
+            <div class="rocket">🚀</div>
+            <h1>Космическая Викторина</h1>
+            <p class="subtitle">10 вопросов о космосе. Проверь себя!</p>
+            <button class="main-btn" id="startBtn">Начать викторину</button>
+        </div>
+
+        <!-- ЭКРАН ВИКТОРИНЫ -->
+        <div id="quizScreen" class="screen">
+            <div class="quiz-header">
+                <div>Вопрос <span id="questionNum">1</span> из <span id="totalNum">10</span></div>
+                <div>⭐ Очки: <span id="score">0</span></div>
+            </div>
+
+            <div class="question-box">
+                <h2 id="questionText">Вопрос</h2>
+            </div>
+
+            <div class="answers" id="answers"></div>
+
+            <div id="feedback" class="feedback"></div>
+        </div>
+
+        <!-- ЭКРАН РЕЗУЛЬТАТОВ -->
+        <div id="resultScreen" class="screen">
+            <div class="result-icon" id="resultIcon">🏆</div>
+            <h1 id="resultTitle">Отлично!</h1>
+            <p class="result-message" id="resultMessage"></p>
+
+            <div class="final-score">
+                <div class="final-score-num" id="finalScore">0</div>
+                <div class="final-score-label">из 100 очков</div>
+            </div>
+
+            <button class="main-btn" id="restartBtn">Играть снова</button>
+        </div>
+    </div>
+
+    <!-- ПОДПИСЬ АВТОРА -->
+    <footer class="author-footer">
+        <p>Сайт создала <strong>Бадмаева Номина</strong></p>
+        <p>11 «В» класс · г. Улан-Удэ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
